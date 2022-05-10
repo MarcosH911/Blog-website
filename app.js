@@ -19,7 +19,7 @@ app.use(express.static("public"));
 const posts = [];
 
 app.get("/", function (req, res) {
-  res.render("home", { homeContent: homeContent });
+  res.render("home", { homeContent: homeContent, posts: posts });
 });
 
 app.get("/about", function (req, res) {
